@@ -35,12 +35,10 @@ def getAdmissionsInfo2019(soup):
     return d
 
 def main():
-    # Task 1: Create a BeautifulSoup object and name it soup. Refer to discussion slides or lecture slides to complete this
     url = "https://en.wikipedia.org/wiki/University_of_Michigan"
     resp = requests.get(url)
     s = BeautifulSoup(resp.content, 'html.parser')
 
-    #Call the functions getLink(soup) and getAdmissionsInfo2019(soup) on your soup object.
     getLink(s)
     getAdmissionsInfo2019(s)
 
