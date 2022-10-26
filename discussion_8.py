@@ -33,22 +33,6 @@ def getAdmissionsInfo2019(soup):
     for i in range(len(keys)):
         d[keys[i]] = values[i]
     return d
-    
-'''
-    schools = tags.find_all('a') 
-    keys = []
-    values = []
-    d = {}
-    for school in schools[1:]: 
-        keys.append(school.text)
-    years = soup.find_all('td',style='text-align:center;')
-    for year in years[1:]: 
-        values.append(year.text)
-    for i in range(len(keys)): 
-        d[keys[i]] = values[i]
-    print(d)
-'''
-
 
 def main():
     # Task 1: Create a BeautifulSoup object and name it soup. Refer to discussion slides or lecture slides to complete this
